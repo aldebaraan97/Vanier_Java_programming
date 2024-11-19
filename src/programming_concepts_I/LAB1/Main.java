@@ -31,10 +31,6 @@ public class Main {
 //        boolean z = true;
 //        System.out.println(x && (y || z));
 //        System.out.println(5 + 12  % (4 * (3 - 1)) - (8 / (2 + 2)) + 6);
-        int x = 2;
-        int y;
-        System.out.println(x++);
-        System.out.println(x);
     }
 
     // If amount1 is greater than 10 and amount2 is less than 100,
