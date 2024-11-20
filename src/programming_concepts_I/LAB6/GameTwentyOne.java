@@ -1,6 +1,6 @@
 package programming_concepts_I.LAB6;
 
-import LAB6.Dice;
+import programming_concepts_I.LAB6.Dice ;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class GameTwentyOne {
         int systemScore = 0;
         int userScore = 0;
         boolean flag = true;
-        LAB6.Dice dice = new Dice();
+        Dice dice = new Dice();
 
         System.out.println(dice.roll());
 
