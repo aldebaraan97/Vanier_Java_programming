@@ -21,8 +21,14 @@ public class Main {
             userLotteryNumbers.add(input.nextInt());
         }
 
+        System.out.println("Lottery numbers:\n");
         lotteryNumbers.printLotteryNumbers();
+        System.out.println("\nUSer input:");
         userLotteryNumbers.forEach(e -> System.out.print(e + " "));
-        System.out.println("The number of matches is " + lotteryNumbers.matches(userLotteryNumbers));
+        System.out.println("\nThe matches are " + lotteryNumbers.matches(userLotteryNumbers));
+    }
+
+    public static void GradeBookTest() {
+
     }
 }
