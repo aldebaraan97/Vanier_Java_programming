@@ -1,8 +1,5 @@
 package programming_concepts_I.LAB6;
 
-import LAB6.Temperature;
-import LAB6.TestScores;
-
 import java.util.Scanner;
 
 public class Main {
