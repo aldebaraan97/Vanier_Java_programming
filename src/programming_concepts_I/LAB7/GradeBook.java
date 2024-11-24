@@ -19,7 +19,8 @@ public class GradeBook {
     }
 
     public ArrayList<Double> getStudentRecord(String studentName) {
-        ArrayList<Double>;
+        ArrayList<Double> studentRecord = new ArrayList<>();
+        return studentRecord;
     }
 
 

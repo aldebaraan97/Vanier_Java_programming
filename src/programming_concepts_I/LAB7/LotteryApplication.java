@@ -23,7 +23,8 @@ public class LotteryApplication {
 
     /** forEach() method performs a process/operation on each element of the list */
     public void printLotteryNumbers() {
-        getLotteryNumbers().forEach(e -> System.out.print(e + " "));
+        for (Integer lotteryNumber : getLotteryNumbers())
+            System.out.print(lotteryNumber + " ");
         System.out.println();
     }
 

@@ -18,7 +18,7 @@ public class Student {
         double sum = 0;
         for (Double score : testScores)
             sum += score;
-        return sum;
+        return sum/testScores.size();
     }
 
     public char getGrade() {
