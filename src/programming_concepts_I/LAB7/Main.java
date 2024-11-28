@@ -31,30 +31,19 @@ public class Main {
 
     public static void gradeBookTest() {
         GradeBook gradeBook = new GradeBook();
-        ArrayList<String> studentNames = new ArrayList<>(4);
-        ArrayList<ArrayList<Double>> studentScores = new ArrayList<>(4);
         Scanner input = new Scanner(System.in);
-        for (int i = 0; i <= 4; i++) {
-            studentScores.add(new ArrayList<>());
-        }
 
         // Get data from user
         System.out.println("Enter student names and scores: ");
         for (int i = 0; i <= 3; i++) { //(String studentName : studentNames) {
             System.out.println("Enter student " + (i + 1) + " name: ");
-            studentNames.add(input.nextLine());
+            gradeBook.getStudentNames().add(input.next());
             for (int j = 0; j <= 3; j++) {
                 System.out.println("Enter score of test " + (j + 1) + " : ");
-                studentScores.get(i).add(input.nextDouble());
+                gradeBook.getStudentScores().get(j).add(input.nextDouble());
             }
             input.nextLine();
         }
-
-        // Push data into the gradeBook object
-        for (int i = 0; i <= 3; i++) {
-            gradeBook = new GradeBook(studentNames.get(i), studentScores.get(i));
-        }
         gradeBook.printStudentRecords();
-
     }
 }
